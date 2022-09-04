@@ -28,14 +28,6 @@ async def wiki(name: str):
     return {"result": result}
 
 
-@app.get("/search/{value}")
-async def search(value: str):
-    """Page to search in wikipedia"""
-
-    result = search_wiki(value)
-    return {"result": result}
-
-
 @app.get("/phrase/{name}")
 async def phrase(name: str):
     """Page to search in wikipedia"""
